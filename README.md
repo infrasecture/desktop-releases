@@ -1,6 +1,6 @@
-# Infrasecture - Desktop releases
+# Infrasecture Desktop releases
 
-This public repository distributes binary releases and signed update metadata for **Infrasecture - Desktop**. Application source and build tooling are maintained separately.
+This public repository distributes binary releases and signed update metadata for **Infrasecture Desktop**. Application source and build tooling are maintained separately.
 
 ## Downloads
 
@@ -8,7 +8,7 @@ Download installers and their verification material from the [Releases page](htt
 
 ## Development previews
 
-Clearly marked development prereleases may contain unsigned Apple Silicon `.pkg` installers for team testing. Open the package with macOS Installer, approve administrator installation, then launch **Infrasecture - Desktop Dev** from Applications. Recipients need no Python, Xcode or terminal setup. macOS may require **Privacy & Security → Open Anyway** because these packages are not Developer ID signed or notarized. See the release instructions before installation.
+Clearly marked development prereleases may contain unsigned Apple Silicon `.pkg` installers for team testing. Open the package with macOS Installer, approve administrator installation, then launch **Infrasecture Desktop** from Applications. Recipients need no Python, Xcode or terminal setup. macOS may require **Privacy & Security → Open Anyway** because these packages are not Developer ID signed or notarized. See the release instructions before installation.
 
 Development previews use separate local state and ad-hoc executable identities. Update them manually with a newer development package; they cannot enter the production signed update channel. Successful installer and dashboard qualification is not a claim of complete planned feature coverage or production readiness.
 
