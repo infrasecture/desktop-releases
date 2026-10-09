@@ -10,7 +10,7 @@ Choose the `.pkg` installer. GitHub also automatically displays **Source code (z
 
 ## Development previews
 
-Clearly marked development prereleases may contain unsigned Apple Silicon `.pkg` installers for team testing. Open the package with macOS Installer, approve administrator installation, then launch **Infrasecture Desktop** from Applications. Recipients need no Python, Xcode or terminal setup. macOS may require **Privacy & Security → Open Anyway** because these packages are not Developer ID signed or notarized. See the release instructions before installation.
+Team-testing builds are published as normal releases with unsigned Apple Silicon `.pkg` installers and explicit development-build limits. Open the package with macOS Installer, approve administrator installation, then launch **Infrasecture Desktop** from Applications. Recipients need no Python, Xcode or terminal setup. macOS may require **Privacy & Security → Open Anyway** because these packages are not Developer ID signed or notarized. See the release instructions before installation.
 
 Development previews use separate local state and ad-hoc executable identities. Update them manually with a newer development package; they cannot enter the production signed update channel. Successful installer and dashboard qualification is not a claim of complete planned feature coverage or production readiness.
 
@@ -22,7 +22,7 @@ GitHub release labels alone do not authorize an update. The application must ver
 
 ## Publishing
 
-Assemble each release as a draft, upload and verify all artifacts, then publish it. Published releases are immutable: corrected binaries require a new version. Promote the release through signed channel metadata only after publication.
+Prepare and verify the exact artifacts and installation instructions locally, then publish the team installer as a normal release. Verify its public downloads, checksums and release flags. Published releases are immutable: corrected binaries require a new version. Promote production releases through signed channel metadata only after publication and trust qualification.
 
 This repository contains distribution artifacts and public verification material. Private signing keys, credentials, development trust keys and unreviewed local test artifacts do not belong here. Publish development previews only from an identified clean source commit, with checksums, installation instructions and explicit qualification limits.
 
