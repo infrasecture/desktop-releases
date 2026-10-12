@@ -1,0 +1,34 @@
+{
+	"signatures": [
+		{
+			"keyid": "8dc93154f2ed9f7c0d468245628770dd24aedae0f93a4882c6588344d35a485b",
+			"sig": "49549a9a6c1e3781b3614fdb01e7025743f08515aa091fc25c8bf8a211644c67663dc4e8b23e3323e24dc5430b4659518009c52565cb31777258ed46b4022002"
+		}
+	],
+	"signed": {
+		"_type": "targets",
+		"expires": "2027-01-09T05:31:44Z",
+		"spec_version": "1.0.31",
+		"targets": {
+			"release-manifest.json": {
+				"custom": {
+					"url": "https://github.com/infrasecture/desktop-releases/releases/download/v0.1.0-dev.20261012063353/release-manifest.json"
+				},
+				"hashes": {
+					"sha256": "ee475be0175d619774683069e39a3368a21fe522a7e8350ad4996cacd26f4a48"
+				},
+				"length": 1256
+			},
+			"v0.1.0-dev.20261012063353/Infrasecture-Desktop-0.1.0-dev.20261012063353-macos-arm64.pkg": {
+				"custom": {
+					"url": "https://github.com/infrasecture/desktop-releases/releases/download/v0.1.0-dev.20261012063353/Infrasecture-Desktop-0.1.0-dev.20261012063353-macos-arm64.pkg"
+				},
+				"hashes": {
+					"sha256": "b4f78ba64f0e0aefef6ee39f38b50156b36980e441f214be38259bad9e86065a"
+				},
+				"length": 61206258
+			}
+		},
+		"version": 32
+	}
+}
