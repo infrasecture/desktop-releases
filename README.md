@@ -10,9 +10,9 @@ Choose the `.pkg` installer. GitHub also automatically displays **Source code (z
 
 ## Development previews
 
-Team-testing builds are published as normal releases with unsigned Apple Silicon `.pkg` installers and explicit development-build limits. Open the package with macOS Installer, approve administrator installation, then launch **Infrasecture Desktop** from Applications. Recipients need no Python, Xcode or terminal setup. macOS may require **Privacy & Security → Open Anyway** because these packages are not Developer ID signed or notarized. See the release instructions before installation.
+Team-testing builds are published as normal releases with unsigned Apple Silicon `.pkg` installers and explicit development-build limits. Open the package with macOS Installer, approve administrator installation, then launch **Infrasecture Desktop** from Applications. Recipients need no Python, Xcode or terminal setup. If macOS says **Apple could not verify** the installer and offers **Move to Trash**, the approval is in **System Settings → Privacy & Security**, under **Security**. Leave the package in Downloads, choose Done if offered, then use **Open Anyway** beside that package and confirm its name. These packages are not Developer ID signed or notarized. [Apple documents this per-package approval](https://support.apple.com/en-us/102445); keep Gatekeeper and SIP enabled. Managed Macs may require their administrator to permit unsigned software. See the release instructions before installation.
 
-Development previews use separate local state and ad-hoc executable identities. Update them manually with a newer development package; they cannot enter the production signed update channel. Successful installer and dashboard qualification is not a claim of complete planned feature coverage or production readiness.
+Development previews use separate local state and ad-hoc executable identities. They include automatic updates through a separately authenticated development stable feed, following the configured update and maintenance policy. Manual updates with a newer development package are also available. These packages cannot enter the production signed update channel. Successful installer and dashboard qualification is not a claim of complete planned feature coverage or production readiness.
 
 ## Automatic updates
 
